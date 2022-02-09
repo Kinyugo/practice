@@ -1,22 +1,22 @@
- 1. Create an environment
-      ```
-      conda create -n kinyugo 
-      ```
- 2. Activate the environment 
-      ```
-      conda activate kinyugo
-      ```
- 3. Install packages 
+1. Create an environment
      ```
-     conda install numpy
+     conda create -n kinyugo 
      ```
- 4. Export the environment
+2. Activate the environment 
      ```
-     conda env export > environment.yml
+     conda activate kinyugo
      ```
-  [Exported Environment](./environment.yml)
-  
- 5. Importing the environment 
-     ```
-     conda env create -f environment.yml
-     ```
+3. Install packages 
+    ```
+    conda install numpy
+    ```
+4. Export the environment
+    ```
+    conda env export > environment.yml
+    ```
+ [Exported Environment](./environment.yml)
+
+5. Importing the environment 
+    ```
+    conda env create -f environment.yml
+    ```
