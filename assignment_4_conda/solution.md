@@ -14,7 +14,7 @@
     ```
     conda env export > environment.yml
     ```
- [Exported Environment](./environment.yml)
+    [Exported Environment](./environment.yml)
 
 5. Importing the environment 
     ```
