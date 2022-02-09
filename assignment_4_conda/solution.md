@@ -1,4 +1,4 @@
-1. Create an environment
+ 1. Create an environment
       ```
       conda create -n kinyugo 
       ```
@@ -15,3 +15,8 @@
      conda env export > environment.yml
      ```
   [Exported Environment](./environment.yml)
+  
+ 5. Importing the environment 
+     ```
+     conda env create -f environment.yml
+     ```
