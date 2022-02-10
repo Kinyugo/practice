@@ -13,3 +13,7 @@ Virtualization involves simulating something virtually and essentially abstracti
 2. Flexibility
 3. Better access control 
 4. Cost effectiveness
+
+## Difference between virtualization and containerization 
+1. Virtualization provides total isolation from the underlying operating system (OS), while containerization is a lightweight isolation and the underlying operating system can still be used.
+2. Virtualization is typically used for whole operating systems, while containerizations is used for individual applications. 
