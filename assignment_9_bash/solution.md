@@ -170,25 +170,27 @@ For instance, the message written by your program would be:
 Good day Emmanuel! It's not 12:57EAT on this lovely day of July 20. 1:00
 or 'Good morning" in the morning hours, or "Good evening" in the evening hours, depending on the current time.
 Of course there will be at least an if or a case construct in your script.
+```
+
 ```bash
-#!/bin/bash 
-echo -n "What's your name? "
-read name 
-hour=`date +%H` #15
-current_time=`date "+%H:%M%Z"` #15:30EAT
-current_day=`date "+%B %d"` #February 16
+  #!/bin/bash 
+  echo -n "What's your name? "
+  read name 
+  hour=`date +%H` #15
+  current_time=`date "+%H:%M%Z"` #15:30EAT
+  current_day=`date "+%B %d"` #February 16
 
-if [[ $hour -lt 12 ]]
-then 
-    period="morning"
-elif [[ $hour -lt 18 ]]
-then 
-    period="day"
-else 
-    period="evening"
-fi 
+  if [[ $hour -lt 12 ]]
+  then 
+      period="morning"
+  elif [[ $hour -lt 18 ]]
+  then 
+      period="day"
+  else 
+      period="evening"
+  fi 
 
-echo "Good $period $name! It is now $current_time on this lovely day of $current_day."
+  echo "Good $period $name! It is now $current_time on this lovely day of $current_day."
 ```
 ```
 Good day Audrey! It is now 16:41EAT on this lovely day of February 16.
